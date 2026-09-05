@@ -1,0 +1,4 @@
+../Driver/Src/RCC.c:4:6:RCC_Enable_PortA	4	static
+../Driver/Src/RCC.c:8:6:RCC_Enable_PortB	4	static
+../Driver/Src/RCC.c:12:6:RCC_Enable_PortC	4	static
+../Driver/Src/RCC.c:16:6:RCC_Config_72MHZ	4	static
