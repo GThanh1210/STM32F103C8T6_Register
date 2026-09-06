@@ -5,16 +5,25 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Driver/Src/AFIO.c \
+../Driver/Src/EXTI.c \
 ../Driver/Src/GPIO.c \
-../Driver/Src/RCC.c 
+../Driver/Src/RCC.c \
+../Driver/Src/TYPE.c 
 
 OBJS += \
+./Driver/Src/AFIO.o \
+./Driver/Src/EXTI.o \
 ./Driver/Src/GPIO.o \
-./Driver/Src/RCC.o 
+./Driver/Src/RCC.o \
+./Driver/Src/TYPE.o 
 
 C_DEPS += \
+./Driver/Src/AFIO.d \
+./Driver/Src/EXTI.d \
 ./Driver/Src/GPIO.d \
-./Driver/Src/RCC.d 
+./Driver/Src/RCC.d \
+./Driver/Src/TYPE.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +33,7 @@ Driver/Src/%.o Driver/Src/%.su Driver/Src/%.cyclo: ../Driver/Src/%.c Driver/Src/
 clean: clean-Driver-2f-Src
 
 clean-Driver-2f-Src:
-	-$(RM) ./Driver/Src/GPIO.cyclo ./Driver/Src/GPIO.d ./Driver/Src/GPIO.o ./Driver/Src/GPIO.su ./Driver/Src/RCC.cyclo ./Driver/Src/RCC.d ./Driver/Src/RCC.o ./Driver/Src/RCC.su
+	-$(RM) ./Driver/Src/AFIO.cyclo ./Driver/Src/AFIO.d ./Driver/Src/AFIO.o ./Driver/Src/AFIO.su ./Driver/Src/EXTI.cyclo ./Driver/Src/EXTI.d ./Driver/Src/EXTI.o ./Driver/Src/EXTI.su ./Driver/Src/GPIO.cyclo ./Driver/Src/GPIO.d ./Driver/Src/GPIO.o ./Driver/Src/GPIO.su ./Driver/Src/RCC.cyclo ./Driver/Src/RCC.d ./Driver/Src/RCC.o ./Driver/Src/RCC.su ./Driver/Src/TYPE.cyclo ./Driver/Src/TYPE.d ./Driver/Src/TYPE.o ./Driver/Src/TYPE.su
 
 .PHONY: clean-Driver-2f-Src
 

@@ -53,6 +53,36 @@ Discarded input sections
  .ARM.exidx     0x00000000       0x10 C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
  .ARM.attributes
                 0x00000000       0x1b C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+ .group         0x00000000        0xc ./Driver/Src/AFIO.o
+ .text          0x00000000        0x0 ./Driver/Src/AFIO.o
+ .data          0x00000000        0x0 ./Driver/Src/AFIO.o
+ .bss           0x00000000        0x0 ./Driver/Src/AFIO.o
+ .debug_info    0x00000000       0x22 ./Driver/Src/AFIO.o
+ .debug_abbrev  0x00000000       0x12 ./Driver/Src/AFIO.o
+ .debug_aranges
+                0x00000000       0x18 ./Driver/Src/AFIO.o
+ .debug_macro   0x00000000       0x11 ./Driver/Src/AFIO.o
+ .debug_macro   0x00000000      0xaba ./Driver/Src/AFIO.o
+ .debug_line    0x00000000       0x35 ./Driver/Src/AFIO.o
+ .debug_str     0x00000000     0x2e05 ./Driver/Src/AFIO.o
+ .comment       0x00000000       0x44 ./Driver/Src/AFIO.o
+ .ARM.attributes
+                0x00000000       0x2d ./Driver/Src/AFIO.o
+ .group         0x00000000        0xc ./Driver/Src/EXTI.o
+ .text          0x00000000        0x0 ./Driver/Src/EXTI.o
+ .data          0x00000000        0x0 ./Driver/Src/EXTI.o
+ .bss           0x00000000        0x0 ./Driver/Src/EXTI.o
+ .debug_info    0x00000000       0x22 ./Driver/Src/EXTI.o
+ .debug_abbrev  0x00000000       0x12 ./Driver/Src/EXTI.o
+ .debug_aranges
+                0x00000000       0x18 ./Driver/Src/EXTI.o
+ .debug_macro   0x00000000       0x11 ./Driver/Src/EXTI.o
+ .debug_macro   0x00000000      0xaba ./Driver/Src/EXTI.o
+ .debug_line    0x00000000       0x35 ./Driver/Src/EXTI.o
+ .debug_str     0x00000000     0x2e05 ./Driver/Src/EXTI.o
+ .comment       0x00000000       0x44 ./Driver/Src/EXTI.o
+ .ARM.attributes
+                0x00000000       0x2d ./Driver/Src/EXTI.o
  .group         0x00000000        0xc ./Driver/Src/GPIO.o
  .group         0x00000000        0xc ./Driver/Src/GPIO.o
  .group         0x00000000        0xc ./Driver/Src/GPIO.o
@@ -66,6 +96,7 @@ Discarded input sections
  .bss           0x00000000        0x0 ./Driver/Src/GPIO.o
  .text.GPIO_Read_Pin
                 0x00000000       0x28 ./Driver/Src/GPIO.o
+ .debug_macro   0x00000000      0xaba ./Driver/Src/GPIO.o
  .group         0x00000000        0xc ./Driver/Src/RCC.o
  .group         0x00000000        0xc ./Driver/Src/RCC.o
  .group         0x00000000        0xc ./Driver/Src/RCC.o
@@ -88,6 +119,21 @@ Discarded input sections
  .debug_macro   0x00000000      0x103 ./Driver/Src/RCC.o
  .debug_macro   0x00000000       0x6a ./Driver/Src/RCC.o
  .debug_macro   0x00000000      0x1df ./Driver/Src/RCC.o
+ .group         0x00000000        0xc ./Driver/Src/TYPE.o
+ .text          0x00000000        0x0 ./Driver/Src/TYPE.o
+ .data          0x00000000        0x0 ./Driver/Src/TYPE.o
+ .bss           0x00000000        0x0 ./Driver/Src/TYPE.o
+ .debug_info    0x00000000       0x22 ./Driver/Src/TYPE.o
+ .debug_abbrev  0x00000000       0x12 ./Driver/Src/TYPE.o
+ .debug_aranges
+                0x00000000       0x18 ./Driver/Src/TYPE.o
+ .debug_macro   0x00000000       0x11 ./Driver/Src/TYPE.o
+ .debug_macro   0x00000000      0xaba ./Driver/Src/TYPE.o
+ .debug_line    0x00000000       0x35 ./Driver/Src/TYPE.o
+ .debug_str     0x00000000     0x2e05 ./Driver/Src/TYPE.o
+ .comment       0x00000000       0x44 ./Driver/Src/TYPE.o
+ .ARM.attributes
+                0x00000000       0x2d ./Driver/Src/TYPE.o
  .group         0x00000000        0xc ./Src/main.o
  .group         0x00000000        0xc ./Src/main.o
  .group         0x00000000        0xc ./Src/main.o
@@ -568,8 +614,11 @@ Linker script and memory map
 LOAD C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
 LOAD C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
 LOAD C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+LOAD ./Driver/Src/AFIO.o
+LOAD ./Driver/Src/EXTI.o
 LOAD ./Driver/Src/GPIO.o
 LOAD ./Driver/Src/RCC.o
+LOAD ./Driver/Src/TYPE.o
 LOAD ./Src/main.o
 LOAD ./Src/syscalls.o
 LOAD ./Src/sysmem.o
@@ -878,43 +927,42 @@ LOAD C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_rnglists
                 0x0000005f       0x19 ./Startup/startup_stm32f103c8tx.o
 
-.debug_macro    0x00000000     0x1ec3
+.debug_macro    0x00000000     0x1409
  .debug_macro   0x00000000       0x72 ./Driver/Src/GPIO.o
- .debug_macro   0x00000072      0xaba ./Driver/Src/GPIO.o
- .debug_macro   0x00000b2c       0x22 ./Driver/Src/GPIO.o
- .debug_macro   0x00000b4e       0x8e ./Driver/Src/GPIO.o
- .debug_macro   0x00000bdc       0x51 ./Driver/Src/GPIO.o
- .debug_macro   0x00000c2d      0x103 ./Driver/Src/GPIO.o
- .debug_macro   0x00000d30       0x6a ./Driver/Src/GPIO.o
- .debug_macro   0x00000d9a      0x1df ./Driver/Src/GPIO.o
- .debug_macro   0x00000f79       0xbe ./Driver/Src/GPIO.o
- .debug_macro   0x00001037       0x72 ./Driver/Src/RCC.o
- .debug_macro   0x000010a9       0x20 ./Driver/Src/RCC.o
- .debug_macro   0x000010c9      0x14c ./Src/main.o
- .debug_macro   0x00001215       0x5b ./Src/main.o
- .debug_macro   0x00001270       0x24 ./Src/main.o
- .debug_macro   0x00001294       0x94 ./Src/main.o
- .debug_macro   0x00001328       0x43 ./Src/main.o
- .debug_macro   0x0000136b       0x34 ./Src/main.o
- .debug_macro   0x0000139f       0x16 ./Src/main.o
- .debug_macro   0x000013b5       0x57 ./Src/main.o
- .debug_macro   0x0000140c       0x9e ./Src/main.o
- .debug_macro   0x000014aa      0x370 ./Src/main.o
- .debug_macro   0x0000181a      0x112 ./Src/main.o
- .debug_macro   0x0000192c       0x10 ./Src/main.o
- .debug_macro   0x0000193c       0x16 ./Src/main.o
- .debug_macro   0x00001952       0x4a ./Src/main.o
- .debug_macro   0x0000199c       0x34 ./Src/main.o
- .debug_macro   0x000019d0       0x10 ./Src/main.o
- .debug_macro   0x000019e0       0x58 ./Src/main.o
- .debug_macro   0x00001a38       0x8e ./Src/main.o
- .debug_macro   0x00001ac6       0x1c ./Src/main.o
- .debug_macro   0x00001ae2      0x185 ./Src/main.o
- .debug_macro   0x00001c67       0x16 ./Src/main.o
- .debug_macro   0x00001c7d       0x16 ./Src/main.o
- .debug_macro   0x00001c93      0x146 ./Src/main.o
- .debug_macro   0x00001dd9       0x26 ./Src/main.o
- .debug_macro   0x00001dff       0xc4 ./Src/main.o
+ .debug_macro   0x00000072       0x22 ./Driver/Src/GPIO.o
+ .debug_macro   0x00000094       0x8e ./Driver/Src/GPIO.o
+ .debug_macro   0x00000122       0x51 ./Driver/Src/GPIO.o
+ .debug_macro   0x00000173      0x103 ./Driver/Src/GPIO.o
+ .debug_macro   0x00000276       0x6a ./Driver/Src/GPIO.o
+ .debug_macro   0x000002e0      0x1df ./Driver/Src/GPIO.o
+ .debug_macro   0x000004bf       0xbe ./Driver/Src/GPIO.o
+ .debug_macro   0x0000057d       0x72 ./Driver/Src/RCC.o
+ .debug_macro   0x000005ef       0x20 ./Driver/Src/RCC.o
+ .debug_macro   0x0000060f      0x14c ./Src/main.o
+ .debug_macro   0x0000075b       0x5b ./Src/main.o
+ .debug_macro   0x000007b6       0x24 ./Src/main.o
+ .debug_macro   0x000007da       0x94 ./Src/main.o
+ .debug_macro   0x0000086e       0x43 ./Src/main.o
+ .debug_macro   0x000008b1       0x34 ./Src/main.o
+ .debug_macro   0x000008e5       0x16 ./Src/main.o
+ .debug_macro   0x000008fb       0x57 ./Src/main.o
+ .debug_macro   0x00000952       0x9e ./Src/main.o
+ .debug_macro   0x000009f0      0x370 ./Src/main.o
+ .debug_macro   0x00000d60      0x112 ./Src/main.o
+ .debug_macro   0x00000e72       0x10 ./Src/main.o
+ .debug_macro   0x00000e82       0x16 ./Src/main.o
+ .debug_macro   0x00000e98       0x4a ./Src/main.o
+ .debug_macro   0x00000ee2       0x34 ./Src/main.o
+ .debug_macro   0x00000f16       0x10 ./Src/main.o
+ .debug_macro   0x00000f26       0x58 ./Src/main.o
+ .debug_macro   0x00000f7e       0x8e ./Src/main.o
+ .debug_macro   0x0000100c       0x1c ./Src/main.o
+ .debug_macro   0x00001028      0x185 ./Src/main.o
+ .debug_macro   0x000011ad       0x16 ./Src/main.o
+ .debug_macro   0x000011c3       0x16 ./Src/main.o
+ .debug_macro   0x000011d9      0x146 ./Src/main.o
+ .debug_macro   0x0000131f       0x26 ./Src/main.o
+ .debug_macro   0x00001345       0xc4 ./Src/main.o
 
 .debug_line     0x00000000     0x10a1
  .debug_line    0x00000000      0x533 ./Driver/Src/GPIO.o
