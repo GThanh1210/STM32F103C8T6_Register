@@ -76,3 +76,14 @@ uint8_t GPIO_Read_Pin(volatile GPIO_Typedef* GPIOx, uint16_t PIN)
 {
 	return ((GPIOx->IDR.REG & PIN)?1:0);
 }
+void GPIO_Toggle(volatile GPIO_Typedef* GPIOx, uint16_t PIN)
+{
+	if(GPIO_Read_Pin(GPIOx,PIN) == 1)
+	{
+		GPIO_Write_Pin(GPIOx, PIN, 0);
+	}else if (GPIO_Read_Pin(GPIOx,PIN) == 0)
+	{
+		GPIO_Write_Pin(GPIOx, PIN, 1);
+	}
+
+}

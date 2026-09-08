@@ -1,0 +1,2 @@
+../Driver/Src/EXTI.c:8:6:EXTI0_INIT	4	static
+../Driver/Src/EXTI.c:18:13:EXTI0_IRQHandler	4	static

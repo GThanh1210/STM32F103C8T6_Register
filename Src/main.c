@@ -2,24 +2,29 @@
 #include <stdint.h>
 #include "RCC.h"
 #include "GPIO.h"
-
+#include "EXTI.h"
 
 void mDelay(volatile uint32_t time){
     while(time--);
 }
-
+volatile uint8_t flag=0;
+void EXTI0_IRQHandler()
+{
+	flag=1;
+	for (int i=0; i<10000;i++);
+	EXTI->PR.BITS.BIT0 = 1;
+}
 int main(void){
-    // 1. Bật Clock cho Port C
-    RCC_Enable_PortC();
-    RCC_Enable_PortA();
-    GPIO_Config(GPIOC,GPIO_PIN_13, GPIO_MODE_OUTPUT_PushPull);
-
-    // 3. Vòng lặp vô hạn chớp tắt LED
+	RCC_Enable_PortA();
+	RCC_Enable_PortC();
+	EXTI0_INIT();
+	GPIO_Config(GPIOA, GPIO_PIN_0, GPIO_MODE_INPUT_PULLDOWN);
+	GPIO_Config(GPIOC, GPIO_PIN_13, GPIO_MODE_OUTPUT_PushPull);
     while(1){
-    	GPIO_Write_Pin(GPIOC, GPIO_PIN_13 ,1);
-        mDelay(500000);
-
-    	GPIO_Write_Pin(GPIOC, GPIO_PIN_13 ,0);
-        mDelay(500000);
+    	if(flag==1)
+    	{
+    		GPIO_Toggle(GPIOC, GPIO_PIN_13);
+    		flag=0;
+    	}
     }
 }

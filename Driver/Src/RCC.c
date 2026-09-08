@@ -13,6 +13,10 @@ void RCC_Enable_PortC(void)
 {
 	RCC->APB2ENR.BITS.IOPCEN = 1;
 }
+void RCC_Enable_AFIO(void)
+{
+	RCC->APB2ENR.BITS.AFIOEN = 1;
+}
 void RCC_Config_72MHZ(void)
 {
 
@@ -37,5 +41,4 @@ void RCC_Config_72MHZ(void)
 	RCC->CFGR.BITS.PPRE2 = 0;
 	// doi toc do doc cua FLASH
 	FLASH->FLASH_ACR.BITS.LATENCY = 2;
-
 }

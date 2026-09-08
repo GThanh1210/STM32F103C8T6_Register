@@ -282,4 +282,5 @@ void RCC_Enable_PortA(void);
 void RCC_Enable_PortB(void);
 void RCC_Enable_PortC(void);
 void RCC_Config_72MHZ(void);
+void RCC_Enable_AFIO(void);
 #endif
